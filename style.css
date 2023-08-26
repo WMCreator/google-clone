@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Helvetica', 'sans-serif';
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+:root {
+    --text-color: #3c4043;
+}
+
+header {
+    width: 100%;
+    padding: 0 25px;
+}
+
+header nav {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav .Nav_List {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav .Nav_List a {
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+header nav .Nav_List .Menu_Icon img {
+    height: 20px;
+    width: 20px;
+}
+
+header nav .Nav_List .Account_Icon img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+main .Main_Logo {
+    width: 300px;
+    margin: 100px auto 20px auto;
+}
+
+.Main_Logo img {
+    width: inherit;
+}
+
+.Main_Search .Search_Container {
+    width: 550px;
+    height: 50px;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin: 0 auto;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.Search_Container:hover {
+    box-shadow: 2px 1px 2px 1px rgba(30,30,30,0.1)
+}
+
+.Search_Container label img {
+    width: 15px;
+    height: 15px;
+}
+
+.Search_Container input {
+    width: 75%;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+}
+
+.Search_Container_Icon {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.Search_Container_Icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.Main_Search_Buttons {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Main_Search_Buttons button {
+    width: 150px;
+    height: 35px;
+    background-color: #f8f9fa;
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.Main_Search_Buttons button:hover {
+    border: #dadce0;
+    color: #202124;
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.2);
+}
+
+.Main_Search_Languages {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.Main_Search_Languages a {
+    margin-left: 5px;
+    color: rgb(80,0,230);
+}
+
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: #70757a;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+footer div {
+    width: 100%;
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div ul li {
+    font-size: 1.4rem;
+}
+
+footer div ul li a {
+    color: #70757a;
+}
+
+footer div .Footer_Left, footer div .Footer_Right {
+    display: flex;
+    gap: 30px;
+}
